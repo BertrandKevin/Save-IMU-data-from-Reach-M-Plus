@@ -1,0 +1,14 @@
+Description=REACH_IMU
+
+Wants = network.target
+After = syslog.target network-online.target
+
+[Service]
+Type = simple
+ExecStart = /home/root/Save-IMU-data-from-Reach-M-Plus-master/./reach
+Restart = on-failure
+RestartSec = 10
+KillMode = process
+
+[Install]
+WantedBy = multi-user.target

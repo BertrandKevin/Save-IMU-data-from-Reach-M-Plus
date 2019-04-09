@@ -1,0 +1,1 @@
+This is the directory where all text files will be saved with IMU data.

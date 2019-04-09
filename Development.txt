@@ -1,0 +1,60 @@
+## Start the program
+  Two possibilities are available to start this program:
+  ### Automatic startup when the Reach is powered on
+  ####  On Windows
+    a. Open Putty (or a similar software)
+    b. Connect to the Reach RTK with:
+       - The host name: the IP address of the Reach
+       - Username: root
+       - Default password: emlidreach
+    c. Type these following commands: 
+       1. cd /home/root/Save-IMU-s-Data-Reach-RTK-master/
+       2. sudo make clean && make
+       3. sudo cp /home/root/Save-IMU-s-Data-Reach-RTK-master/imu-bash /etc/init.d/
+       4. sudo chmod 0755 /etc/init.d/imu-bash
+       5. systemctl daemon-reload
+       6. sudo update-rc.d imu-bash defaults
+    d. Restart the Reach with: sudo reboot
+    e. Now every time that the reach is powered on, the program will automaticaly start
+  ####  On Linux / macOS
+    a. Open a new Terminal window
+    b. Connect to the Reach with the command: ssh root@IpAddressOfTheReach. 
+       - Default password : emlidreach
+    c. Type these following commands:
+       1. cd /home/root/Save-IMU-s-Data-Reach-RTK-master/
+       2. sudo make clean && make
+       3. sudo cp /home/root/Save-IMU-s-Data-Reach-RTK-master/imu-bash /etc/init.d/
+       4. sudo chmod 0755 /etc/init.d/imu-bash
+       5. systemctl daemon-reload
+       6. sudo update-rc.d imu-bash defaults
+    d. reatsrt the Reach with: sudo reboot
+    e. Now every time that the reach is powered on, the program will automaticaly start
+
+## Only for development
+Before using the Reach M+, you have to installation a cross-compilation chains:
+
+*sudo apt-get update*
+
+*sudo apt list --upgradable*
+
+*sudo apt-get upgrade*
+
+*sudo apt-get install git*
+
+*sudo apt-get install gcc make gcc-arm-linux-gnueabi binutils-arm-linux-gnueabi*
+
+*sudo apt-get install gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf*
+
+*sudo apt-get install gcc-arm-linux-gnueabi g++-arm-linux-gnueabi*
+
+Then, you have to compile you program with one of these compiler:
+- For C files -> _arm-linux-gnueabi-gcc prog.c -o prog -static_
+- For C++ files -> _arm-linux-gnueabi-g++ prog.c -o prog -static_
+
+You can chek if the file is good for ARM: _file prog_ and the answer has to be the same as:
+
+**_prog: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), statically linked, for GNU/Linux 3.2.0, BuildID[sha1]=1aec53a65fdd71ec68e761b5ef4cd2fae6e4e75c, not stripped_**
+
+And finally you can send the program on the Reach M+ and type these command lines on the Reach when the trasnfert is done:
+- *sudo chmod +x prog*
+- *./prog*
