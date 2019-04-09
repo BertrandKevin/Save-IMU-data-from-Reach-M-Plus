@@ -33,7 +33,7 @@
        - Username: root
        - Default password: emlidreach
     c. Type these following commands: 
-       1. cd /home/root/Save-IMU-Data-from-Reach-M-Plus-master/
+       1. cd /home/root/Save-IMU-data-from-Reach-M-Plus-master/
        2. sudo cp reach.service /etc/systemd/system/
        3. systemctl daemon-reload
        4. sudo systemctl enable reach.service
@@ -44,7 +44,7 @@
     b. Connect to the Reach with the command: ssh root@IpAddressOfTheReach. 
        - Default password : emlidreach
     c. Type these following commands: 
-       1. cd /home/root/Save-IMU-Data-from-Reach-M-Plus-master/
+       1. cd /home/root/Save-IMU-data-from-Reach-M-Plus-master/
        2. sudo cp reach.service /etc/systemd/system/
        3. systemctl daemon-reload
        4. sudo systemctl enable reach.service
