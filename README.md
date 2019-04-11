@@ -1,14 +1,12 @@
 # Save IMU's Data from Reach M+ (local storage)
 ## Information
 - You have to connect the Reach M+ and your computer to the same WiFi. 
-
--- To connect the Reach to a new WiFi, follow this link: [Emild documentation](https://doc.emlid.com/reachm-plus/common/reachview/).
-
--- If you are not able to connect the Reach to a network, the Reach will automatically create its own WiFi named like "reach:3B:C8" and the blue light remains on (not flashing), To connect to this network with your computer, the password is "emlidreach". 
+  - To connect the Reach to a new WiFi, follow this link: [Emild documentation](https://doc.emlid.com/reachm-plus/common/reachview/).
+  - If you are not able to connect the Reach to a network, the Reach will automatically create its own WiFi named like "reach:3B:C8" and the blue light remains on (not flashing), To connect to this network with your computer, the password is "emlidreach". 
 - In all following command lines where "IpAddressOfTheReach" is written, you have to replace it by the address IP of the Reach (for example: 192.168.42.1).
 - When you use Putty or the Terminal, you'll be asked to enter :
-	-- "Password" -> This is the password of your computer
-	-- "root@IpAddressOfTheReach password" --> This is the Reach password (Default password : emlidreach)
+  - "Password" -> This is the password of your computer
+  - "root@IpAddressOfTheReach password" --> This is the Reach password (Default password : emlidreach)
 
 ## Searching the IP address
 
