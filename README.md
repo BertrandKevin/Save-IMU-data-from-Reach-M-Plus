@@ -9,7 +9,10 @@
   - "root@IpAddressOfTheReach password" --> This is the Reach password (Default password : emlidreach)
 
 ## Searching the IP address
-
+- The easiest way to find the IP address is the ReachView app. You can download it for:
+  - iPhone: [AppStore](https://itunes.apple.com/us/app/reachview/id1295196887?mt=8).
+  - Android: [Google Play](https://play.google.com/store/apps/details?id=com.reachview). 
+  
 ## Software needed for Windows
 - WinSCP: [Download link](https://winscp.net/eng/download.php).
 - Putty: [Download link](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). You have to go to the "Alternative binary files" section and download "putty.exe (the SSH and Telnet client itself)".
