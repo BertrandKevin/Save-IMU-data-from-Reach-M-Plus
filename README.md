@@ -107,7 +107,7 @@
     c. On the right window of WinSCP, go to
 	-> "Save-IMU-data-from-Reach-M-Plus-master"
 		-> "TXT-Files"
-    d. Now, you can drag and drop all files of this folder and then delete them on the Reach.
+    d. Now, you can drag and drop all files of this folder to your computer and then delete them on the Reach.
   ####  On Linux / macOS
     a. Open a new Terminal window
     b. Type this command line: sudo scp -r root@IpAddressOfTheReach:/home/root/Save-IMU-Data-from-Reach-M-Plus-master/TXT-Files/ ~/Downloads/
